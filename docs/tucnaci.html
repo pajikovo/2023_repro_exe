@@ -11,7 +11,7 @@
 
 
 
-<title>Home</title>
+<title>tucnaci</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -281,7 +281,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Home</h1>
+<h1 class="title toc-ignore">tucnaci</h1>
 
 </div>
 
@@ -408,10 +408,11 @@ have uncommitted changes.
 
 <p>
 These are the previous versions of the repository in which changes were
-made to the R Markdown (<code>analysis/index.Rmd</code>) and HTML
-(<code>docs/index.html</code>) files. If you’ve configured a remote Git
-repository (see <code>?wflow_git_remote</code>), click on the hyperlinks
-in the table below to view the files as they were in that past version.
+made to the R Markdown (<code>analysis/tucnaci.Rmd</code>) and HTML
+(<code>docs/tucnaci.html</code>) files. If you’ve configured a remote
+Git repository (see <code>?wflow_git_remote</code>), click on the
+hyperlinks in the table below to view the files as they were in that
+past version.
 </p>
 <div class="table-responsive">
 <table class="table table-condensed table-hover">
@@ -440,7 +441,7 @@ Message
 Rmd
 </td>
 <td>
-<a href="https://github.com/pajikovo/2023_repro_exe/blob/2a5d2f890bcb303dac928ee6b63985a52ce95f07/analysis/index.Rmd" target="_blank">2a5d2f8</a>
+<a href="https://github.com/pajikovo/2023_repro_exe/blob/2a5d2f890bcb303dac928ee6b63985a52ce95f07/analysis/tucnaci.Rmd" target="_blank">2a5d2f8</a>
 </td>
 <td>
 pajikovo
@@ -452,40 +453,6 @@ pajikovo
 Publish the initial files for myproject
 </td>
 </tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/pajikovo/2023_repro_exe/ddc1e5aa04dfee933199c56ca0a063a8915142b3/docs/index.html" target="_blank">ddc1e5a</a>
-</td>
-<td>
-pajikovo
-</td>
-<td>
-2023-04-28
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-Rmd
-</td>
-<td>
-<a href="https://github.com/pajikovo/2023_repro_exe/blob/642e138b53bea7bb2710c90bb9468a3de5fbeb6d/analysis/index.Rmd" target="_blank">642e138</a>
-</td>
-<td>
-pajikovo
-</td>
-<td>
-2023-04-28
-</td>
-<td>
-Start workflowr project.
-</td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -493,10 +460,16 @@ Start workflowr project.
 </div>
 </div>
 </div>
-<p>Welcome to my research website.</p>
-<ul>
-<li><a href="tucnaci">tucnaci</a></li>
-</ul>
+<p>library(palmerpenguins) library(tidyverse) penguins %&gt;%
+count(species) penguins %&gt;% group_by(species) %&gt;%
+summarize(across(where(is.numeric), mean, na.rm = TRUE))</p>
+<div id="scatterplot-example-1-penguin-flipper-length-versus-body-mass"
+class="section level1">
+<h1>Scatterplot example 1: penguin flipper length versus body mass</h1>
+<p>ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g))
++ geom_point(aes(color = species, shape = species), size = 2) +
+scale_color_manual(values = c(“darkorange”,“darkorchid”,“cyan4”))</p>
+</div>
 
 
 <!-- Adjust MathJax settings so that all math formulae are shown using
