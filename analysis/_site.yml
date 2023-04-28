@@ -12,7 +12,7 @@ navbar:
   right:
   - icon: fab fa-github
     text: Source code
-    href: https://github.com/vybrane_jmeno/2023_repro_exe
+    href: https://github.com/pajikovo/2023_repro_exe
 output:
   workflowr::wflow_html:
     toc: yes
